@@ -1,0 +1,83 @@
+% \documentclass[12pt,twoside,openright,a4paper]{memoir}
+% % \usepackage[papersize=a4,bindingoffset=.75in]{geometry}
+% \usepackage[utf8]{inputenc}
+% \usepackage[portuguese]{babel}
+
+% \usepackage{showframe}
+
+% \include{data}
+% \include{lib}
+
+% %%% BEGIN DOCUMENT
+
+% \begin{document}
+% \thispagestyle{empty}
+% \begin{tikzpicture}[remember picture,overlay]
+%   \node (back names) [shape=rectangle, fill=blue, minimum height=40mm, minimum width=\paperwidth, anchor=south west] at (current page.south west) {};
+%   \node at (back names.center) {
+%     \begin{tabular}{r l}
+%       A & B
+%     \end{tabular}
+%   };
+%   \node (names) [shape=rectangle, fill=red, minimum width=\paperwidth, anchor=west] at ([yshift=8cm]current page.south west) {
+%     \begin{tabular}{r l}
+%       one & two
+%     \end{tabular}
+%   };
+% \end{tikzpicture}
+
+% \end{document}
+
+\documentclass[portuguese,12pt,twoside,openright,a4paper]{memoir}
+\usepackage{libertine} % tipografia
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{csquotes}
+\usepackage{graphicx}
+
+
+\usepackage[style=abnt,backend=biber]{biblatex}
+
+\addbibresource{references.bib}
+
+\usepackage{showframe}
+
+\usepackage{mfirstuc} % capitaliza o subtítulo (usado na capa) 
+\usepackage{tikz} % desenhos no geral (usado na capa e na folha de rosto)
+\usepackage{lastpage} % referência para a última página na ficha catalográfica
+\usepackage{paralist} % enumerações na ficha catalográfica
+\usepackage{caption} % notes bellow figures
+\usepackage[scale=2]{ccicons}
+% \usepackage{hyperref}
+\usetikzlibrary{svg.path}
+
+\include{data}
+\include{lib}
+
+
+\begin{document}
+
+% Cover 
+\makecover
+
+\frontmatter
+
+% Title page
+\maketitlepage
+
+% copyright page
+\makecopyright
+
+\tableofcontents{}
+
+\include{editorial}
+\include{balanco-editorial}
+
+\mainmatter
+
+\part{História do Rio Grande do Norte: temporalidades e interpretações}
+
+\include{arcticles/01-o-patrimonio-da-comp/main}
+  
+\end{document}
