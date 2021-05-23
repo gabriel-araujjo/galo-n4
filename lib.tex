@@ -131,8 +131,17 @@
 	\clearpage
 }
 
-\newcommand\chapterTwoLines[2]{%
-  \chapter[#1: {\itshape#2}]{\uppercase{#1}\\[2ex]\Large\makefirstuc{#2}}%
+\newcommand{\chapterTwoLines}[2]{%
+  \chapter[#1: {\itshape#2}]{\uppercase{#1}\\\makefirstuc{#2}}%
+}
+
+\newcommand{\fakeChapterTwoLines}[2]{%
+  \bigskip%
+  \begin{Spacing}{1.25}%
+  {\noindent\sffamily\large\uppercase{#1}\\\makefirstuc{#2}}%
+  \end{Spacing}%
+  \smallskip%
+  %
 }
 
 \newcommand\articleAuthor[2]{%
@@ -152,11 +161,51 @@
 }
 
 \newcommand\galofigure[3]{%
-    \begin{figure}[h]%
+    \begin{figure}[ht]%
         \centering%
-        \caption{#1}%
         \includegraphics[width=0.75\textwidth]{ {images/#2} }%
-        {\captionsetup{font=small}\caption*{Fonte: #3}}%
+        \caption{#1}%
+        \caption*{Fonte: #3}%
         \label{fig:#2}%
     \end{figure}%
 }
+
+
+%% Headers
+\nouppercaseheads
+
+\makepagestyle{galo}
+\makeevenhead{galo}{\sffamily \tiny \thepage}{}{\sffamily \tiny \journaladdress{}, \journalsemester{} \journalyear}
+\makeoddhead{galo}{\sffamily \tiny \MakeUppercase{\journalname}, ano \journalyearn{}, nº \journalnumber{}}{}{\sffamily \tiny \thepage}
+\makeevenfoot{galo}{}{}{}
+\makeoddfoot{galo}{}{}{}
+
+\pagestyle{galo}
+
+%% Parts
+% \titleclass{\part}{top} % make part like a chapter
+\titleformat{\part}[display]{\sffamily\LARGE\scshape}{}{1em}{}
+
+%% Chapters
+\titleformat{\chapter}[display]{\sffamily\large}{}{1em}{}
+
+%% Sections
+\titleformat{\section}[hang]{\sffamily\large\bfseries}{}{0em}{}
+
+\titlespacing*{\chapter}    {0pt}{0pt}{10pt}
+\titlespacing*{\section}    {0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+\newenvironment{galoResumo}[1][Resumo]
+{\medskip \small \noindent\textbf{\MakeUppercase{#1}:} }
+{}
+
+\newcommand{\galoPalavrasChave}[2][Palavras-chave]{%
+    \smallskip%
+    \begin{small}%
+        \noindent\textbf{#1:} #2%
+    \end{small}%
+    \medskip%
+}
+
+\DeclareBibliographyCategory{fullcited}
+\newcommand{\mybibexclude}[1]{\addtocategory{fullcited}{#1}}

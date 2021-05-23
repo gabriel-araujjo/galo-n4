@@ -1,0 +1,68 @@
+\begin{refsection}
+\renewcommand{\thefigure}{\arabic{figure}}
+
+\chapterTwoLines
+{Farinha e carne no sertão. Fome e caristia no litoral}
+{aspectos do mercado interno no Rio Grande do Norte (séc. XVIII a XIX)}
+\label{chap:farinha}
+
+\articleAuthor
+{Thiago Alves Dias}
+{Doutor em História Econômica pela Universidade de São Paulo, professor de História Moderna na Universidade de Pernambuco e pesquisador no grupo de pesquisa do CNPq ``Laboratório de Experimentação em História Social'' da UFRN. ID Lattes: 4789960762797571. ORCID: 0000-0003-4308-418X. E-mail: thiago.dias@upe.br.}
+
+\begin{galoResumo}
+    \marginpar{
+        \begin{flushleft}
+        \tiny \sffamily
+        Como referenciar?\\\fullcite{SelfDias2021}\mybibexclude{SelfDias2021}, p. \pageref{chap:farinha}--\pageref{chap:farinhaend}, \journalPubDate{}
+        \end{flushleft}
+    }
+    Partindo da análise de dois gêneros básicos da alimentação colonial que foram objetos de regulação direta das instituições administrativas coloniais, a farinha de mandioca e a carne bovina, o presente artigo visa contribuir com a escassa discussão historiográfica norte-rio-grandense sobre o mercado interno e as dinâmicas mercantis coloniais durante o século XVIII e primeira metade do XIX, notadamente, da cidade do Natal. Com base nos registros da Câmara de Natal, cartas de sesmarias e outras fontes documentais, bem como amparado nas proposituras teóricas do historiador econômico Istvan Hont, concluímos que o comércio interno no Rio Grande do Norte, em geral, e na cidade de Natal, em particular, ganhou conjunturas de estabilidade e superação de problemas de abastecimento a partir da conquista colonial dos sertões e das prerrogativas institucionais de controle auferidas pela Câmara de Natal.
+\end{galoResumo}
+
+\galoPalavrasChave{Câmara de Natal. Rio Grande do Norte. Mercado interno.}
+
+\begin{otherlanguage}{spanish}
+
+\fakeChapterTwoLines
+{Harina y carne en el sertão. Hambre y carestía en la costa}
+{aspectos del mercado interno en Rio Grande do Norte (siglos XVIII al XIX)}
+
+\begin{galoResumo}[Resumen]
+    Desde el análisis de los tipos básicos de alimentos coloniales que fueron objeto de regulación directa por parte de las instituciones administrativas coloniales, la harina de mandioca y la carne vacuna, este artículo tiene como objetivo contribuir a la escasa discusión historiográfica en el mercado interno de Rio Grande do Norte y la dinámica mercantil colonial durante el siglo XVIII y la primera mitad del XIX, especialmente en la ciudad de Natal. Basándose en los registros de la Cámara de Natal, cartas de sesmarias y otras fuentes documentales, así como amparado en los planteamientos teóricos del historiador económico Istvan Hont, concluimos que el comercio interno en Rio Grande do Norte, en general, y en la ciudad de Natal, en particular, ganó estabilidad y superó problemas de abastecimiento como resultado de la conquista colonial del interior y de las prerrogativas institucionales de control obtenidas por la Cámara de Natal.
+\end{galoResumo}
+
+\galoPalavrasChave[Palabras clave]{Cámara de Natal. Rio Grande del Norte. Mercado interno.}
+\end{otherlanguage}
+
+\section{Introdução}
+
+% No mês de julho de 1711, a Câmara de Natal registrou em seus livros a falência de João do Rosário, o contratador das carnes daquele ano. Resolveram, portanto, notificar o fiador do contrato, o tenente-coronel e vereador Manoel Rodrigues Coelho, exigindo que o mesmo apresentasse uma solução para o caso. Naquela altura, Manoel Rodrigues Coelho já estava de volta a Natal, já que o mesmo estava nas trincheiras do Assú combatendo com os indígenas do sertão, sendo inclusive eleito no ano de 1712 a função de Juiz Ordinário da Câmara de Natal. Ocorre que durante o mês de junho daquele ano de 1711, mês festivo em torno do fim da colheita do milho e apropriado pelo calendário cristão em memória dos santos Antônio, João e Pedro; a cidade sofreu um verdadeiro desabastecimento de carne bovina\footnote{Instituto Histórico e Geográfico do Rio Grande do Norte [IHGRN] --- Câmara de Natal. Livros de Termos de Vereação da Câmara de Natal (LTVCN), Termo de Vereação de 02 de julho de 1711, Livro 1709--1721, fl. 43v. Manuscrito.}.
+
+% No mês de maio de 1713, ou seja, em meio ao problema do abastecimento da carne bovina, a Câmara de Natal decidiu, acatando a queixa da população, instituir uma multa para os agricultores que fabricavam farinha de mandioca e não traziam para a venda pública na cidade do Natal\footnote{IHGRN --- Câmara de Natal. LTVCN, Termo de Vereação de 23 de maio de 1713, Livro 1709--1721, fl. 77v-78. Manuscrito. Acervo do IHGRN.}. Muito embora não houvesse impostos diretos da Câmara sobre a comercialização da farinha de mandioca, o que poderia encarecer o produto, como era o caso da carne bovina, a oferta do ‘ordinário pão da terra’, como referiu-se Francisco de Brito Freire em 1630 \cite[p.~187]{Freire1675nova} e reiterado por Caio Prado Jr. em suas relevantes proposituras sobre a agricultura de subsistência no Brasil colonial (PRADO Jr.,1997, p. 165), também sofria com as guerras no sertão. O abastecimento das tropas do Açu impedia que a produção de farinha do sertão viesse para o litoral. Além disso, parte considerável da farinha produzida no litoral seguia o lucrativo comércio com a capitania de Pernambuco, problema essa que teve continuidade durante todo o século.  
+
+% Esse quadro de guerras coloniais contra os indígenas e a oferta de mercados mais vantajosos fora da Capitania do Rio Grande do Norte, provocou sucessivas ondas de desabastecimento na cidade de Natal durante o século XVIII: nem carne, nem farinha.  
+
+% O presente artigo visa contribuir com a escassa discussão historiográfica norte-rio-grandense sobre o mercado interno e às dinâmicas mercantis coloniais durante os séculos XVIII e XIX, notadamente, da cidade do Natal. A problemática aqui discutida limita-se entre o fim das Guerras de Conquista do Sertão, a chamada ‘Guerra dos Bárbaros’ (c. 1720), até, aproximadamente, a segunda metade do século XIX, quando a cotonicultura muda, drasticamente, os padrões de consumo e de circulação de produtos do comércio interno no Rio Grande do Norte.  
+
+% No tocante a historiografia, diferentes esforços de pesquisas em história econômica e social do Brasil, notadamente, a partir da década de 1970, tem se debruçado sobre as formas de organização e funcionamento dos circuitos mercantis internos no período colonial (LINHARES, 1979; LAPA, 1980). Passado mais de meio século, a crescente preocupação das humanidades com problemáticas permanentes, tais como: acesso à terra, desiguais relações de trabalho e ausência de políticas públicas de financiamento e intervenção estatal em áreas produtivas estratégicas, por exemplo, continuam conduzindo a comunidade acadêmica a investigar o nosso passado agrário. Essas pesquisas têm o mérito de buscar evidenciar, entre outras questões, as práticas comerciais endógenas e aspectos da economia de subsistência na América portuguesa, passando pela formação e consolidação de mercados internos. Esse esforço contínuo de produção de conhecimento visa nos auxiliar, enquanto sociedade, na definição de caminhos e estratégias para superação de parte desses nossos problemas históricos. 
+
+% Esse artigo partiu da análise de dois gêneros básicos da alimentação colonial que foram objetos de regulação direta das instituições administrativas coloniais: a carne bovina e a farinha de mandioca. A escolha deve-se ao fato de que inicialmente esses gêneros foram largamente produzidos no litoral atendendo as demandas populacionais proporcionais ao primeiro século da colonização. Com o adensamento populacional litorâneo, a consolidação da conquista dos sertões na primeira metade do século XVIII, foi uma alternativa para ocupação da terra e formação dos planteis, lavouras e pastos do sertão servindo de retaguarda as necessidades de abastecimento alimentício litorâneo. Apesar das insuficientes pesquisas realizadas no campo da alimentação e produção de alimentos na Capitania do Rio Grande do Norte, tudo nos leva a crer que o arroz, o milho e o feijão eram, sem dúvidas, amplamente consumidos, no entanto, tinham um papel secundário na alimentação cotidiana diante do consumo da farinha de mandioca. De acordo com Câmara Cascudo (1980, p. 78), “a farinha foi o produto inicial e sempre há citações holandesas e portuguesas [...]. A Capitania era região de gado e mandioca”. 
+
+% O trabalho de pesquisa aqui empregado segue as proposituras teóricas defendidas pelo historiador britânico da economia e do pensando político, Istvan Hont (2005). Para esse historiador, os padrões de desenvolvimento político europeu durante o período moderno, consolidadas durante o século XVIII, mas em franca expansão desde o século XV, passaram a alinhar o comércio como função do Estado moderno, solidificando a interação ‘comércio e política’ e intervindo, inclusive, nas questões de mercado interno, economia doméstica e segurança alimentar das populações. As funções comerciais das instituições modernas que cuidavam da presença do rei e do aparato português no Brasil durante o período colonial não deixaram de ser afetadas por essas transformações e foi justamente nesse longo processo que podemos analisar um dos cruciais fatores que permitiram a formação das nações e do ideal do nacionalismo econômico tão preponderante no âmbito dos Estados nacionais no século XIX, inclusive no Brasil: a interação ‘comércio e política’. 
+
+% Nesse sentido e buscando emular as questões teóricas à realidade política colonial e imperial do Rio Grande do Norte entre os séculos XVIII e XIX, a hipótese desenvolvida nesse artigo é que o comércio interno no Rio Grande do Norte, em geral, e na cidade de Natal, em particular, ganhou conjunturas de estabilidade e superação de problemas de abastecimento a partir da conquista colonial dos sertões e das prerrogativas institucionais de controle auferidas pela Câmara de Natal. Assim sendo, a conquista colonial dos sertões permitiu, por um lado, a ampliação das fazendas pecuaristas e das lavouras de mandioca nos sertões e, por outro lado, a Câmara de Natal passou a legislar e ser mais operante em proteção ao mercado interno e de subsistência, trazendo essa matéria para o centro das questões jurisdicionais  e da organização do estado burocrático local. 
+
+% Quanto as questões metodológicas, Maria Yedda Linhares, em 1979, já havia assinalado a urgência na pesquisa e aprofundamento da temática sobre o mercado interno, ressaltando a importância do desenvolvimento de estudos sobre a pecuária e a cultura de alimentos no Brasil, encarando-os em suas características internas e externas, assim como também se fazia necessário o estudo das interrelações territoriais. A pesquisadora também apontou um caminho metodológico quando afirmou ser indispensável retomar velhas fontes cartoriais e de natureza municipal, utilizar novas fontes, reavaliar outras já conhecidas e revalorizar velhos textos, de forma sistemática e organizada.  
+
+% Seguindo essas premissas, além da reavaliação de um antigo trabalho produzido sobre esse tema (DIAS, 2007), utilizamos enquanto fontes documentais: registros das vereações da Câmara de Natal sob a guarda do Instituto Histórico e Geográfico do Rio Grande do Norte (IHGRN); cartas de sesmarias que explicitam as intenções de uso da terra dos solicitantes disponíveis na Plataforma Sesmarias do Império Luso-brasileiro (SILB); registros das ações dos Presidentes de Província do século XIX disponíveis no site do Center for Research Libraries; correspondência entre autoridades do Rio Grande do Norte e administradores lusos através da documentação do Arquivo Histórico Ultramarino (AHU) do fundo Conselho Ultramarino e disponível no site da Biblioteca Nacional do Rio de Janeiro (BNRJ) e, por fim, documentos diversos publicados em periódicos como, por exemplo, “Memória sobre a extrema fome...” do padre Joaquim José Pereira de 1793 sobre a produção de alimentos no sertão do Rio Grande do Norte e publicado na Revista do Instituto Histórico e Geográfico Brasileiro (IHGB). 
+
+% \printbibliography[heading=subbibliography,notcategory=fullcited]
+
+\hfill Recebido em 30 abr. 2021.
+
+\hfill Aprovado em 14 maio 2021.
+
+\label{chap:farinhaend}
+
+\end{refsection}

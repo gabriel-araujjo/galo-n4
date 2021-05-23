@@ -29,7 +29,7 @@
 % \end{document}
 
 \documentclass[portuguese,12pt,twoside,openright,a4paper]{memoir}
-\usepackage{libertine} % tipografia
+\usepackage{libertinus} % tipografia
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{babel}
@@ -37,18 +37,32 @@
 \usepackage{graphicx}
 
 
-\usepackage[style=abnt,backend=biber]{biblatex}
+\usepackage[style=abnt,backend=biber, giveninits]{biblatex}
 
-\addbibresource{references.bib}
+\addbibresource{arcticles/01-o-patrimonio-da-comp/references.bib}
+\addbibresource{arcticles/02-farinha-e-carne-no-s/references.bib}
+\addbibresource{arcticles/03-nao-ao-peso-nao-ao-r/references.bib}
 
-\usepackage{showframe}
+% \usepackage{showframe}
 
 \usepackage{mfirstuc} % capitaliza o subtítulo (usado na capa) 
 \usepackage{tikz} % desenhos no geral (usado na capa e na folha de rosto)
 \usepackage{lastpage} % referência para a última página na ficha catalográfica
 \usepackage{paralist} % enumerações na ficha catalográfica
-\usepackage{caption} % notes bellow figures
-\usepackage[scale=2]{ccicons}
+\usepackage[labelsep=endash, font={footnotesize,sf}]{caption} % notes bellow figures
+\usepackage[scale=2]{ccicons} % creative common icons
+\usepackage{titlesec} % format titles
+\usepackage{contour}
+\usepackage{ulem}
+
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
 % \usepackage{hyperref}
 \usetikzlibrary{svg.path}
 
@@ -76,8 +90,13 @@
 
 \mainmatter
 
-\part{História do Rio Grande do Norte: temporalidades e interpretações}
+\part[Dossiê: História do Rio Grande do Norte: \itshape{temporalidades e interpretações}]{{\normalsize Dossiê}\\
+História do Rio Grande do Norte\\
+\textup{Temporalidades e interpretações}
+}
 
 \include{arcticles/01-o-patrimonio-da-comp/main}
+\include{arcticles/02-farinha-e-carne-no-s/main}
+\include{arcticles/03-nao-ao-peso-nao-ao-r/main}
   
 \end{document}
