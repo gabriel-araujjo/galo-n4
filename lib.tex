@@ -131,6 +131,19 @@
 	\clearpage
 }
 
+\newcommand{\chapterOneLine}[1]{%
+  \chapter[#1]{\uppercase{#1}}%
+}
+
+\newcommand{\fakeChapterOneLine}[1]{%
+  \bigskip%
+  \begin{Spacing}{1.25}%
+  {\noindent\sffamily\large\uppercase{#1}}%
+  \end{Spacing}%
+  \smallskip%
+  %
+}
+
 \newcommand{\chapterTwoLines}[2]{%
   \chapter[#1: {\itshape#2}]{\uppercase{#1}\\\makefirstuc{#2}}%
 }
