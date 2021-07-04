@@ -222,3 +222,6 @@
 
 \DeclareBibliographyCategory{fullcited}
 \newcommand{\mybibexclude}[1]{\addtocategory{fullcited}{#1}}
+
+\newcounter{rannexno}
+\newcommand{\rannex}[1]{\refstepcounter{rannexno}\label{#1}}
