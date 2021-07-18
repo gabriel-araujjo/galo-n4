@@ -1,33 +1,3 @@
-% \documentclass[12pt,twoside,openright,a4paper]{memoir}
-% % \usepackage[papersize=a4,bindingoffset=.75in]{geometry}
-% \usepackage[utf8]{inputenc}
-% \usepackage[portuguese]{babel}
-
-% \usepackage{showframe}
-
-% \include{data}
-% \include{lib}
-
-% %%% BEGIN DOCUMENT
-
-% \begin{document}
-% \thispagestyle{empty}
-% \begin{tikzpicture}[remember picture,overlay]
-%   \node (back names) [shape=rectangle, fill=blue, minimum height=40mm, minimum width=\paperwidth, anchor=south west] at (current page.south west) {};
-%   \node at (back names.center) {
-%     \begin{tabular}{r l}
-%       A & B
-%     \end{tabular}
-%   };
-%   \node (names) [shape=rectangle, fill=red, minimum width=\paperwidth, anchor=west] at ([yshift=8cm]current page.south west) {
-%     \begin{tabular}{r l}
-%       one & two
-%     \end{tabular}
-%   };
-% \end{tikzpicture}
-
-% \end{document}
-
 \documentclass[portuguese,12pt,twoside,openright,a4paper]{memoir}
 \usepackage{libertinus} % tipografia
 \usepackage[T1]{fontenc}
@@ -113,58 +83,60 @@
 \begin{document}
 
 % Cover 
-\makecover
+% \makecover
 
 \frontmatter
 
 % Title page
-\maketitlepage
+% \maketitlepage
 
 % copyright page
-\makecopyright
+% \makecopyright
 
-\tableofcontents*{}
+% \tableofcontents*{}
 
-\include{editorial}
-\include{balanco-editorial}
+%\include{editorial}
+%\include{balanco-editorial}
 
 \mainmatter
 
-\part[Dossiê: História do Rio Grande do Norte: \itshape{temporalidades e interpretações}]{{\normalsize Dossiê}\\
-História do Rio Grande do Norte\\
-\textup{Temporalidades e interpretações}
-}
+\setcounter{page}{thepage}
 
-\include{articles/01-o-patrimonio-da-comp/main}
-\include{articles/02-farinha-e-carne-no-s/main}
-\include{articles/03-nao-ao-peso-nao-ao-r/main}
-\include{articles/04-de-como-as-letras-fo/main}
-\include{articles/05-a-institucionalizaca/main}
-\include{articles/06-vencido-o-new-look-r/main}
-\include{articles/07-os-caminhos-e-os-des/main}
-\include{articles/08-frentes-de-trabalho-/main}
-\include{articles/09-diario-de-natal-pape/main}
-\include{articles/10-comemorar-a-posse-de/main}
-\include{articles/11-o-contexto-sobre-o-u/main}
-\include{articles/12-silencio-dos-caboclo/main}
+% \part[Dossiê: História do Rio Grande do Norte: \itshape{temporalidades e interpretações}]{{\normalsize Dossiê}\\
+% História do Rio Grande do Norte\\
+% \textup{Temporalidades e interpretações}
+% }
 
-\part{Artigos livres}
+%\include{articles/01-o-patrimonio-da-comp/main}
+%\include{articles/02-farinha-e-carne-no-s/main}
+%\include{articles/03-nao-ao-peso-nao-ao-r/main}
+%\include{articles/04-de-como-as-letras-fo/main}
+%\include{articles/05-a-institucionalizaca/main}
+%\include{articles/06-vencido-o-new-look-r/main}
+%\include{articles/07-os-caminhos-e-os-des/main}
+%\include{articles/08-frentes-de-trabalho-/main}
+%\include{articles/09-diario-de-natal-pape/main}
+%\include{articles/10-comemorar-a-posse-de/main}
+%\include{articles/11-o-contexto-sobre-o-u/main}
+%\include{articles/12-silencio-dos-caboclo/main}
 
-\include{articles/13-dispositivo-moda-a-r/main}
-\include{articles/14-melhoramentos-de-sao/main}
-\include{articles/15-cidade-em-mapas-text/main}
-\include{articles/16-sair-da-piramide-con/main}
+% \part{Artigos livres}
 
-\part{Transcrição de documentos}
+%\include{articles/13-dispositivo-moda-a-r/main}
+%\include{articles/14-melhoramentos-de-sao/main}
+%\include{articles/15-cidade-em-mapas-text/main}
+%\include{articles/16-sair-da-piramide-con/main}
 
-\include{articles/17-transcricao-testamen/main}
+% \part{Transcrição de documentos}
 
-\part{Projeto de Pesquisa}
+%\include{articles/17-transcricao-testamen/main}
 
-\include{articles/18-politica-e-moderniza/main}
+% \part{Projeto de Pesquisa}
+
+%\include{articles/18-politica-e-moderniza/main}
 
 \backmatter
 
-\include{ficha-tecnica}
+%\include{ficha-tecnica}
 
 \end{document}

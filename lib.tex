@@ -209,6 +209,9 @@
 %% Sections
 \titleformat{\section}[hang]{\sffamily\large\bfseries}{}{0em}{}
 
+%% Subsections
+\titleformat{\subsection}[hang]{\normalsize\bfseries}{}{0em}{}
+
 \titlespacing*{\chapter}    {0pt}{0pt}{10pt}
 \titlespacing*{\section}    {0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
 
@@ -229,3 +232,20 @@
 
 \newcounter{rannexno}
 \newcommand{\rannex}[1]{\refstepcounter{rannexno}\label{#1}}
+
+\def\mednobreak{\par\ifdim\lastskip<\medskipamount
+  \removelastskip\nopagebreak\medskip\fi}
+
+
+\addto\captionsportuguese{% Replace "english" with the language you use
+  \renewcommand{\contentsname}%
+    {Sumário}%
+}
+
+\maxtocdepth{chapter}
+
+\renewcommand{\thechapter}{}
+\renewcommand{\cftchapterdotsep}{\cftdotsep}
+\renewcommand\cftchapterfont{\normalfont}
+\renewcommand\cftchapterpagefont{\normalfont}
+
