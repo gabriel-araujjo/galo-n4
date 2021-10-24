@@ -1,0 +1,146 @@
+\documentclass[portuguese,12pt,twoside,openright,a4paper]{memoir}
+\usepackage{libertinus} % tipografia
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{csquotes}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{xurl}
+\usepackage{verse}
+
+
+\usepackage[style=abnt,backend=biber, giveninits]{biblatex}
+
+\addbibresource{articles/01-o-patrimonio-da-comp/references.bib}
+\addbibresource{articles/02-farinha-e-carne-no-s/references.bib}
+\addbibresource{articles/03-nao-ao-peso-nao-ao-r/references.bib}
+\addbibresource{articles/04-de-como-as-letras-fo/references.bib}
+\addbibresource{articles/05-a-institucionalizaca/references.bib}
+\addbibresource{articles/06-vencido-o-new-look-r/references.bib}
+\addbibresource{articles/07-os-caminhos-e-os-des/references.bib}
+\addbibresource{articles/08-frentes-de-trabalho-/references.bib}
+\addbibresource{articles/09-diario-de-natal-pape/references.bib}
+\addbibresource{articles/10-comemorar-a-posse-de/references.bib}
+\addbibresource{articles/11-o-contexto-sobre-o-u/references.bib}
+\addbibresource{articles/12-silencio-dos-caboclo/references.bib}
+\addbibresource{articles/13-dispositivo-moda-a-r/references.bib}
+\addbibresource{articles/14-melhoramentos-de-sao/references.bib}
+\addbibresource{articles/15-cidade-em-mapas-text/references.bib}
+\addbibresource{articles/16-sair-da-piramide-con/references.bib}
+\addbibresource{articles/17-transcricao-testamen/references.bib}
+\addbibresource{articles/18-politica-e-moderniza/references.bib}
+
+
+
+
+% \usepackage{showframe}
+
+\usepackage{mfirstuc} % capitaliza o subtítulo (usado na capa) 
+\usepackage{tikz} % desenhos no geral (usado na capa e na folha de rosto)
+\usepackage{lastpage} % referência para a última página na ficha catalográfica
+\usepackage{paralist} % enumerações na ficha catalográfica
+\usepackage[labelsep=endash, font={footnotesize,sf}]{caption} % notes bellow figures
+\usepackage[scale=2]{ccicons} % creative common icons
+\usepackage{titlesec} % format titles
+\usepackage{contour}
+\usepackage{ulem}
+\usepackage{makecell}
+
+\usetikzlibrary{shapes,snakes,fit}
+
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+\usepackage[hidelinks]{hyperref}
+\usetikzlibrary{svg.path}
+
+\include{data}
+\include{lib}
+
+\hypersetup{
+    pdftitle={\journalname{} n. \journalnumber{}},
+    pdfsubject={\journalsubject{}},
+    pdfauthor={Revista Galo},
+    pdfcreator={revistagalo.com.br},
+    pdfproducer={revistagalo.com.br},
+    pdfkeywords={\keywordone{}, \keywordtwo{}, \keywordthree{}, \keywordfour{}, \keywordfive{}},
+    pdfdisplaydoctitle=true,
+    bookmarksnumbered=true,
+    bookmarksopen=true,
+    bookmarksopenlevel=1,
+    colorlinks=false,
+    pdfstartview=Fit,
+    pdfpagemode=UseOutlines,
+    pdfpagelayout=TwoPageRight
+}
+
+\begin{document}
+
+% Cover 
+% \makecover
+
+\frontmatter
+
+% \setcounter{page}{5}
+
+% Title page
+% \maketitlepage
+
+% copyright page
+% \makecopyright
+
+% \tableofcontents*{}
+
+% \include{editorial}
+%\include{balanco-editorial}
+
+\mainmatter
+
+\setcounter{page}{243}
+
+% \part[Dossiê: História do Rio Grande do Norte: \itshape{temporalidades e interpretações}]{{\normalsize Dossiê}\\
+% História do Rio Grande do Norte\\
+% \textup{Temporalidades e interpretações}
+% }
+
+%\include{articles/01-o-patrimonio-da-comp/main}
+%\include{articles/02-farinha-e-carne-no-s/main}
+%\include{articles/03-nao-ao-peso-nao-ao-r/main}
+%\include{articles/04-de-como-as-letras-fo/main}
+%\include{articles/05-a-institucionalizaca/main}
+%\include{articles/06-vencido-o-new-look-r/main}
+%\include{articles/07-os-caminhos-e-os-des/main}
+%\include{articles/08-frentes-de-trabalho-/main}
+%\include{articles/09-diario-de-natal-pape/main}
+%\include{articles/10-comemorar-a-posse-de/main}
+%\include{articles/11-o-contexto-sobre-o-u/main}
+%\include{articles/12-silencio-dos-caboclo/main}
+
+% \part{Artigos livres}
+
+%\include{articles/13-dispositivo-moda-a-r/main}
+%\include{articles/14-melhoramentos-de-sao/main}
+\include{articles/15-cidade-em-mapas-text/main}
+%\include{articles/16-sair-da-piramide-con/main}
+
+% \part{Transcrição de documentos}
+
+%\include{articles/17-transcricao-testamen/main}
+
+% \part{Projeto de Pesquisa}
+
+%\include{articles/18-politica-e-moderniza/main}
+
+\backmatter
+
+% \setcounter{page}{thepage}
+
+%\include{ficha-tecnica}
+
+\end{document}
