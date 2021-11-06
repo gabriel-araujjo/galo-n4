@@ -38,13 +38,15 @@
 \usepackage{graphicx}
 \usepackage{xurl}
 \usepackage{verse}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage{multirow}
 
 
 \usepackage[style=abnt,backend=biber, giveninits]{biblatex}
 
 \addbibresource{articles/01-leitura-literaria-e-/references.bib}
-% \addbibresource{articles/01-o-patrimonio-da-comp/references.bib}
-% \addbibresource{articles/02-farinha-e-carne-no-s/references.bib}
+\addbibresource{articles/02-olhar-da-gestao-fren/references.bib}
 % \addbibresource{articles/03-nao-ao-peso-nao-ao-r/references.bib}
 % \addbibresource{articles/04-de-como-as-letras-fo/references.bib}
 % \addbibresource{articles/05-a-institucionalizaca/references.bib}
@@ -72,11 +74,14 @@
 \usepackage{lastpage} % referência para a última página na ficha catalográfica
 \usepackage{paralist} % enumerações na ficha catalográfica
 \usepackage[labelsep=endash, font={footnotesize,sf}]{caption} % notes bellow figures
+\setlength{\belowcaptionskip}{.5\baselineskip}
 \usepackage[scale=2]{ccicons} % creative common icons
 \usepackage{titlesec} % format titles
 \usepackage{contour}
 \usepackage{ulem}
 \usepackage{makecell}
+\usepackage{enumitem} % list continuation -- must be after paralist
+\usepackage{xpatch}
 
 \usetikzlibrary{shapes,snakes,fit}
 
@@ -136,7 +141,7 @@ Formação Docente\\
 }
 
 \include{articles/01-leitura-literaria-e-/main}
-% \include{articles/02-farinha-e-carne-no-s/main}
+\include{articles/02-olhar-da-gestao-fren/main}
 % \include{articles/03-nao-ao-peso-nao-ao-r/main}
 % \include{articles/04-de-como-as-letras-fo/main}
 % \include{articles/05-a-institucionalizaca/main}

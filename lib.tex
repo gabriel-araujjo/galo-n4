@@ -249,3 +249,51 @@
 \renewcommand\cftchapterfont{\normalfont}
 \renewcommand\cftchapterpagefont{\normalfont}
 
+\newcommand{\listquadroname}{Lista de quadros}
+\newcommand{\quadroname}{Quadro}
+\newcommand{\quadrorefname}{Quadro}
+\newcommand{\chartautorefname}{Quadro}
+
+\newfloat{quadro}{htbp}{loq}[chapter]
+\floatname{quadro}{\quadroname}
+\floatstyle{plaintop}
+\restylefloat{quadro}
+
+\makeatletter
+\renewcommand{\thequadro}{\thechapter.\@arabic\c@quadro}
+
+% define env "longquadro"
+\newenvironment{longquadro}
+  {\patch@longtable@i\patch@longtable@ii
+   \longtable}
+  {\endlongtable}
+
+% patching codes base on https://tex.stackexchange.com/a/548021
+\newcommand\patch@longtable@i{%
+  \xpatchcmd\ltcaption@ORI@LT@array
+    {\refstepcounter{table}}
+    {\refstepcounter{quadro}}
+    {}{}%\fail}%
+}
+
+% since "\@ifpackageloaded" is preamble only, the patching codes have to
+% be split in two macros
+\@ifpackageloaded{caption}{
+  % handle compatibility with caption package
+  \newcommand\patch@longtable@ii{%
+    \renewcommand\LTcaptype{quadro}%
+  }
+}{
+  \newcommand\patch@longtable@ii{%
+    % derectly redefine "\LT@c@ption"
+    \def\LT@c@ption##1[##2]##3{%
+      \LT@makecaption##1\fnum@quadro{##3}%
+      \def\@tempa{##2}%
+      \ifx\@tempa\@empty\else
+         {\let\\\space
+         \addcontentsline{loq}{quadro}{\protect\numberline{\thequadro}{##2}}}%
+      \fi}%
+  }
+}
+\makeatother
+
