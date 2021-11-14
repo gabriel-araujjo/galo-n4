@@ -33,6 +33,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{textcomp}
+\usepackage{mathtools} % align minus signal on table \mathllap-
 \usepackage{amsmath} % must load amsmath before amsthm
 \usepackage{amsthm}
 \usepackage{libertinust1math} % math typography
@@ -54,7 +55,7 @@
 \addbibresource{articles/02-olhar-da-gestao-fren/references.bib}
 \addbibresource{articles/03-contribuicoes-do-sof/references.bib}
 \addbibresource{articles/04-matematica-na-arte--/references.bib}
-% \addbibresource{articles/05-a-institucionalizaca/references.bib}
+\addbibresource{articles/05-material-dourado-com/references.bib}
 % \addbibresource{articles/06-vencido-o-new-look-r/references.bib}
 % \addbibresource{articles/07-os-caminhos-e-os-des/references.bib}
 % \addbibresource{articles/08-frentes-de-trabalho-/references.bib}
@@ -87,8 +88,9 @@
 \usepackage{makecell}
 \usepackage{enumitem} % list continuation -- must be after paralist
 \usepackage{xpatch}
+\usepackage[makeroom]{cancel} % diagonal risk over values
 
-\usetikzlibrary{shapes,snakes,fit}
+\usetikzlibrary{shapes,snakes,fit,arrows.meta}
 
 \renewcommand{\ULdepth}{1.8pt}
 \contourlength{0.8pt}
@@ -121,6 +123,8 @@
     pdfpagelayout=TwoPageRight
 }
 
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
 \begin{document}
 
 % Cover 
@@ -149,7 +153,7 @@ Formação Docente\\
 \include{articles/02-olhar-da-gestao-fren/main}
 \include{articles/03-contribuicoes-do-sof/main}
 \include{articles/04-matematica-na-arte--/main}
-% \include{articles/05-a-institucionalizaca/main}
+\include{articles/05-material-dourado-com/main}
 % \include{articles/06-vencido-o-new-look-r/main}
 % \include{articles/07-os-caminhos-e-os-des/main}
 % \include{articles/08-frentes-de-trabalho-/main}
