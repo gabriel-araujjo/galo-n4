@@ -59,7 +59,7 @@
 \addbibresource{articles/06-utilizacao-de-modelo/references.bib}
 \addbibresource{articles/07-reflexao-diante-do-p/references.bib}
 \addbibresource{articles/08-reflexao-sobre-pedag/references.bib}
-% \addbibresource{articles/08-frentes-de-trabalho-/references.bib}
+\addbibresource{articles/09-curriculo-e-infantil/references.bib}
 % \addbibresource{articles/09-diario-de-natal-pape/references.bib}
 % \addbibresource{articles/10-comemorar-a-posse-de/references.bib}
 % \addbibresource{articles/11-o-contexto-sobre-o-u/references.bib}
@@ -130,6 +130,11 @@
 \newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
 \newcommand{\tabitem}{~~\llap{\textbullet}~~}
 
+\newcommand{\negpar}[1][-1em]{%
+  \ifvmode\else\par\fi
+  {\parindent=#1\leavevmode}\ignorespaces
+}
+
 \begin{document}
 
 % Cover 
@@ -162,7 +167,7 @@ Formação Docente\\
 \include{articles/06-utilizacao-de-modelo/main}
 \include{articles/07-reflexao-diante-do-p/main}
 \include{articles/08-reflexao-sobre-pedag/main}
-% \include{articles/08-frentes-de-trabalho-/main}
+\include{articles/09-curriculo-e-infantil/main}
 % \include{articles/09-diario-de-natal-pape/main}
 % \include{articles/10-comemorar-a-posse-de/main}
 % \include{articles/11-o-contexto-sobre-o-u/main}
